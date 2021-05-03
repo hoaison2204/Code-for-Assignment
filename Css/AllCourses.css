@@ -1,13 +1,93 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
-*{
+* {
   padding: 1;
   margin: 10;
   list-style: none;
   text-decoration: none;
 }
+.actions{
+  padding-left: 30px;
+}
+.actions .profile {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.actions .profile img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.actions .menuu{
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  padding: 10px ;
+  background: rgb(162, 199, 255);
+  width: 150px;
+  box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.actions .menuu.active{
+  visibility: visible;
+  opacity: 1;
+}
+.actions .menuu::before
+{
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: rgb(162, 199, 255);
+  transform: rotate(45deg);
+}
+.actions .menuu ul{
+  font-size: 15px;
+}
+.actions .menuu ul li{
+  list-style: none;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  align-items: left;
+}
+.actions .menuu ul li img{
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.actions .menuu ul li:hover img{
+  opacity: 1;
+}
+.actions .menuu ul li a{
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.actions .menuu h3{
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 400;
+}
 body {
   font-family: 'Roboto', sans-serif;
 }
+
 .sidebar {
   position: static;
   left: -250px;
@@ -16,7 +96,15 @@ body {
   background: #dadada;
   transition: all .5s ease;
 }
-.sidebar ul a{
+.content {
+  position: absolute;
+  height: auto;
+  width: 1437px;
+  margin-left: 300px;
+  margin-top: -554px;
+}
+
+.sidebar ul a {
   display: block;
   height: 100%;
   width: 100%;
@@ -26,25 +114,30 @@ body {
   padding-left: 40px;
   box-sizing: border-box;
   border-bottom: 1px solid black;
-  border-top: 1px solid rgba(255,255,255,.1);
+  border-top: 1px solid rgba(255, 255, 255, .1);
   transition: .4s;
 }
-ul li:hover a{
+
+ul li:hover a {
   padding-left: 50px;
 }
-.sidebar ul a i{
+
+.sidebar ul a i {
   margin-right: 16px;
 }
-#check{
+
+#check {
   display: none;
 }
-label #btn,label #cancel{
+
+label #btn, label #cancel {
   position: absolute;
   background: #042331;
   border-radius: 3px;
   cursor: pointer;
 }
-label #btn{
+
+label #btn {
   left: 40px;
   top: 205px;
   font-size: 35px;
@@ -52,7 +145,8 @@ label #btn{
   padding: 6px 12px;
   transition: all .5s;
 }
-label #cancel{
+
+label #cancel {
   z-index: 1111;
   left: -195px;
   top: 17px;
@@ -61,21 +155,26 @@ label #cancel{
   padding: 4px 9px;
   transition: all .5s ease;
 }
-#check:checked ~ .sidebar{
+
+#check:checked~.sidebar {
   left: 0;
 }
-#check:checked ~ label #btn{
+
+#check:checked~label #btn {
   left: 250px;
   opacity: 0;
   pointer-events: none;
 }
-#check:checked ~ label #cancel{
+
+#check:checked~label #cancel {
   left: 195px;
 }
-#check:checked ~ section{
+
+#check:checked~section {
   margin-left: 250px;
 }
-section{
+
+section {
   background: url(bg.jpeg) no-repeat;
   background-position: center;
   background-size: cover;
