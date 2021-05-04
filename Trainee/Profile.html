@@ -5,20 +5,16 @@
     <link rel="shotcut icon" href="../Logo/logo.jpg">
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Trainee</title>
+    <title>All courses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../Css/trainee.css">
     <link rel="stylesheet" type="text/css" href="../Css/AllCourses.css">
-
 </head>
 
 <body>
-
     <!--Logo header va thanh navigation bar-->
     <div>
         <img src="../img/Logo.jpg" alt="Logo" width="30%" height="30%" hspace="35%">
@@ -45,27 +41,6 @@
                     <li class="nav-item padding">
                         <a class="nav-link" href="#">Contact us</a>
                     </li>
-                    <!--Dropout-->
-                    <!--
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            All courses
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Course 1</a></li>
-                            <li><a class="dropdown-item" href="#">Course 2</a></li>
-                            <li><a class="dropdown-item" href="#">Course 3</a></li>
-                            <li><a class="dropdown-item" href="#">Course 4</a></li>
-                            <li><a class="dropdown-item" href="#">Course 5</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Sign up for a new course</a></li>
-                        </ul>
-                    </li>
-                    -->
-                    <!--end dropout-->
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2 search-custom" type="search" placeholder="Search"
@@ -89,16 +64,62 @@
             </div>
         </div>
     </nav>
-    <!--Ket thuc thanh navigation bar-->
-    <!--content-->
-    <div id="slideshow">
-        <div class="slide-wrapper">
-            <div class="slide slide-2"><img src="../img/slide 1.jpg" alt="image 1"></div>
-        </div>
+    <!--Ket thuc navigation bar-->
+
+    <!-- content -->
+    <div class = "profile">
+        <h3 style="margin-left: 10%;">Student profile</h3>
+        <table class="table table-custom">
+            <thead>
+              <tr class="table-align">
+                <th width="300px" scope="col">Title</th>
+                <th scope="col">Detail information</th>
+                <th width="100px" scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">User name</th>
+                <td>NguyenVanA</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Full name</th>
+                <td>Nguyen Van A</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Date of birth</th>
+                <td>13/04/2000</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Home town</th>
+                <td>Hanoi</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Email</th>
+                <td>NguyenVanA@gmail.com</td>
+                <td><a href="#">Edit</a></td>
+              </tr>
+              <tr>
+                <th scope="row">Phone number</th>
+                <td>012346789</td>
+                <td><a href="#">Edit</a></td>
+              </tr>
+              <tr>
+                <th scope="row">Address</th>
+                <td>15 Dong quan, Quan Hoa, Cau Giay, Ha Noi</td>
+                <td><a href="#">Edit</a></td>
+              </tr>
+            </tbody>
+          </table>
     </div>
+    <!--end content-->
+
     <!-- Footer -->
     <footer class="bg-dark text-center text-white position-bottom">
-        <!-- Grid container -->
         <div class="container p-4">
             <!-- Section: Social media -->
             <section class="mb-4">
@@ -125,16 +146,27 @@
                 <div>©2021 copyright by FPT greenwich Vietnam</div>
             </section>
     </footer>
-    <!-- Footer -->
-    <!--end left side bar-->
-    <!-- script -->
     <script>
         function menuToggle() {
             const toggleMenu = document.querySelector('.menuu');
             toggleMenu.classList.toggle('active')
         }
     </script>
+    <!--end footer-->
+
+    <!-- script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+    <!-- dropdown  -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js"></script>
     </script>
 </body>
+
 </html

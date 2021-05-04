@@ -5,9 +5,11 @@
   list-style: none;
   text-decoration: none;
 }
-.actions{
+
+.actions {
   padding-left: 30px;
 }
+
 .actions .profile {
   position: relative;
   width: 60px;
@@ -16,6 +18,7 @@
   overflow: hidden;
   cursor: pointer;
 }
+
 .actions .profile img {
   position: absolute;
   top: 0;
@@ -24,25 +27,27 @@
   height: 100%;
   object-fit: cover;
 }
-.actions .menuu{
+
+.actions .menuu {
   position: absolute;
   top: 100%;
   right: 10px;
-  padding: 10px ;
+  padding: 10px;
   background: rgb(162, 199, 255);
   width: 150px;
-  box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   transition: 0.5s;
   visibility: hidden;
   opacity: 0;
 }
-.actions .menuu.active{
+
+.actions .menuu.active {
   visibility: visible;
   opacity: 1;
 }
-.actions .menuu::before
-{
+
+.actions .menuu::before {
   content: '';
   position: absolute;
   top: -5px;
@@ -52,38 +57,45 @@
   background: rgb(162, 199, 255);
   transform: rotate(45deg);
 }
-.actions .menuu ul{
+
+.actions .menuu ul {
   font-size: 15px;
 }
-.actions .menuu ul li{
+
+.actions .menuu ul li {
   list-style: none;
   padding: 10px 0;
-  border-top: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: left;
 }
-.actions .menuu ul li img{
+
+.actions .menuu ul li img {
   max-width: 20px;
   margin-right: 10px;
   opacity: 0.5;
   transition: 0.5s;
 }
-.actions .menuu ul li:hover img{
+
+.actions .menuu ul li:hover img {
   opacity: 1;
 }
-.actions .menuu ul li a{
+
+.actions .menuu ul li a {
   display: inline-block;
   text-decoration: none;
   color: #555;
   font-weight: 500;
   transition: 0.5s;
 }
-.actions .menuu h3{
+
+.actions .menuu h3 {
   text-align: center;
   font-size: 20px;
   color: #000000;
   font-weight: 400;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -96,6 +108,7 @@ body {
   background: #dadada;
   transition: all .5s ease;
 }
+
 .content {
   position: absolute;
   height: auto;
@@ -179,4 +192,17 @@ section {
   background-position: center;
   background-size: cover;
   transition: all .5s;
+}
+
+.table-custom {
+  width: 90%;
+  margin-left: 10%
+}
+
+.profile {
+  width: 90%;
+  height: 550px;
+}
+.table-align{
+  text-align: center;
 }
